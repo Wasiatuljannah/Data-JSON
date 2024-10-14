@@ -37,3 +37,20 @@ let data = [
 //TODO 2 : dapatkan data dengan nama tertentu
 //TODO 3 : dapatkan data dengan alamat New York
 //TODO 4 : dapatkan data dengan umur >= 30
+
+
+// TODO 1 : Dapatkan semua data
+const allData = data;
+console.log("All Data:", allData);
+
+// TODO 2 : Dapatkan data dengan nama tertentu (contoh: 'Jane Smith')
+const getByName = (name) => data.filter(person => person.name === name);
+console.log("Data by Name (Jane Smith):", getByName('Jane Smith'));
+
+// TODO 3 : Dapatkan data dengan alamat di New York
+const getByCity = (city) => data.filter(person => person.city === city);
+console.log("Data in New York:", getByCity('New York'));
+
+// TODO 4 : Dapatkan data dengan umur >= 30
+const getByAge = (age) => data.filter(person => person.age >= age);
+console.log("Data with Age >= 30:", getByAge(30));
